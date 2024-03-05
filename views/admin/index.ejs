@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+ 
+
+   <% include ../partialAdmin/head %>
+
+    
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body>
+    
+
+    <% include ../partialAdmin/theme-switcher %>
+
+    
+    <% include ../partialAdmin/header %>
+
+    <div class="container-fluid">
+      <div class="row">
+        <% include ../partialAdmin/sidebar %>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashbord</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+              <div class="card">
+                <div class="card-body bg-success">
+                  <div class="card-title">Total Cinemas: </div>
+                  <h4 class="text-center"><%= cinemaCount %></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+              <div class="card">
+                <div class="card-body bg-success">
+                  <div class="card-title">Total Movies: </div>
+                  <h4 class="text-center"><%= movieCount %></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+              <div class="card">
+                <div class="card-body bg-success">
+                  <div class="card-title">Total Seats: </div>
+                  <h4 class="text-center"><%= seatCount %></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+              <div class="card">
+                <div class="card-body bg-success">
+                  <div class="card-title">Total bookings: </div>
+                  <h4 class="text-center"><%= bookingCount %></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        
+<script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      </div>
+    </div>
+
+
+    </body>
+</html>
